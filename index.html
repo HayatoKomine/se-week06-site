@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小峯 勇人 - ポートフォリオ</title>
+    <title>小峯 勇人 - 自己紹介</title>
     <style>
-        /* 全体のスタイル設定 */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -31,8 +30,6 @@
             font-size: 1rem;
             color: #adb5bd;
         }
-
-        /* ナビゲーション */
         nav {
             background-color: #e9ecef;
             position: sticky;
@@ -56,8 +53,6 @@
             background-color: #ced4da;
             color: #212529;
         }
-
-        /* コンテンツエリア */
         .container {
             max-width: 800px;
             margin: 2rem auto;
@@ -92,8 +87,6 @@
             font-size: 0.8rem;
             top: 0.1rem;
         }
-
-        /* ワークスカード */
         .card {
             background: #f8f9fa;
             border: 1px solid #dee2e6;
@@ -105,8 +98,6 @@
             margin-bottom: 0.5rem;
             color: #24292e;
         }
-
-        /* フッター */
         footer {
             text-align: center;
             padding: 2rem;
@@ -114,8 +105,6 @@
             font-size: 0.9rem;
             border-top: 1px solid #e1e4e6;
         }
-
-        /* スマートフォン向けレスポンシブ対応 */
         @media (max-width: 600px) {
             header h1 { font-size: 1.5rem; }
             nav a { padding: 0.5rem 0.5rem; font-size: 0.9rem; }
@@ -124,27 +113,21 @@
     </style>
 </head>
 <body>
-
     <header>
         <h1>小峯 勇人 / Hayato Komine</h1>
         <p>日本大学理工学部 応用情報工学科</p>
     </header>
-
     <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#works">Works</a>
         <a href="#reflection">Reflection</a>
     </nav>
-
     <div class="container">
-        <!-- About セクション -->
         <section id="about">
             <h2>自己紹介</h2>
             <p>日本大学理工学部 応用情報工学科の4年生です。最近は卒業単位がぎりぎりなので勉強に励んでいます。webサイトなどは個人的に作ったことがあったり、卒業研究で作成しているので多少作れました。これまでは部活動と金融に興味があったので証券などの勉強や資格取得に力を入れてきました。Fintech関連の仕事をしていきたいなと思い就活もしています。</p>
         </section>
-
-        <!-- Skills セクション -->
         <section id="skills">
             <h2>実績</h2>
             <ul>
@@ -153,29 +136,22 @@
                 <li><strong>就活:</strong> 証券会社にてSQLを用いたデータ分析や投資業務を行う部署に内定</li>
             </ul>
         </section>
-
-       <!-- Works セクション -->
         <section id="works">
             <h2>最近の活動</h2>
             <div class="card">
                 <h3>就職活動支援Webアプリケーション</h3>
-                <p>PythonとDjangoフレームワークを用いて開発を進めているWebアプリケーションです。自分自身の経験や周りの学生の課題をもとに、選考状況の効率的な管理や情報集約をサポートする機能を実装しています。実務で役立つプロダクトの設計・開発プロセスを意識しています。<a href="https://linkquest.jp/" target="_blank">https://linkquest.jp/</a></p>
+                <p>Pythonを用いて開発を進めているWebアプリケーションです。自分自身の経験や周りの学生の課題をもとに、選考状況の効率的な管理や情報集約をサポートする機能を実装しています。実務で役立つプロダクトの設計・開発プロセスを意識しています。<a href="https://linkquest.jp/" target="_blank">https://linkquest.jp/</a></p>
             </div>
         </section>
-
-        <!-- Reflection セクション -->
         <section id="reflection">
             <h2>授業の感想</h2>
             <p>第6週のソフトウェア工学の講義および演習を通じて、GitやGitHubを用いたバージョン管理、GitHub Desktopの基本操作（commit / push / pull）を学びました。</p>
-        </section> <!-- ← この閉じタグを追加しました -->
+        </section>
     </div>
-
     <footer>
         <p>&copy; 2026 小峯勇人</p>
     </footer>
-
     <script>
-        // スムーススクロール用の簡単なJavaScript
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();

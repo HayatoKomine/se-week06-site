@@ -1,5 +1,191 @@
-<!doctype html>
-<meta charset="utf-8">
-<title>自己紹介</title>
-<h1>自己紹介</h1>
-<p>授業で作成したページです。</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小峯 勇人 - ポートフォリオ</title>
+    <style>
+        /* 全体のスタイル設定 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #24292e;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1rem;
+            color: #adb5bd;
+        }
+
+        /* ナビゲーション */
+        nav {
+            background-color: #e9ecef;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        nav a {
+            color: #495057;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.25rem;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        nav a:hover {
+            background-color: #ced4da;
+            color: #212529;
+        }
+
+        /* コンテンツエリア */
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        section h2 {
+            border-bottom: 2px solid #0366d6;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: #0366d6;
+        }
+        ul {
+            list-style-type: none;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+        ul li::before {
+            content: "■";
+            color: #0366d6;
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+            top: 0.1rem;
+        }
+
+        /* ワークスカード */
+        .card {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: #24292e;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6a737d;
+            font-size: 0.9rem;
+            border-top: 1px solid #e1e4e6;
+        }
+
+        /* スマートフォン向けレスポンシブ対応 */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            nav a { padding: 0.5rem 0.5rem; font-size: 0.9rem; }
+            section { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>小峯 勇人 / Hayato Komine</h1>
+        <p>日本大学理工学部 応用情報工学科</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#works">Works</a>
+        <a href="#reflection">Reflection</a>
+    </nav>
+
+    <div class="container">
+        <!-- About セクション -->
+        <section id="about">
+            <h2>About</h2>
+            <p>日本大学理工学部 応用情報工学科の3年生です。中学・高校時代から情報システムについて学んできました。現在は技術的なバックグラウンドを基盤としつつ、将来はM&A業界やベンチャーキャピタル（VC）、スタートアップ支援といった領域で、戦略策定やセールス、ディーリングなどのビジネスサイドから挑戦していきたいと考えています。</p>
+        </section>
+
+        <!-- Skills セクション -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>プログラミング & フレームワーク:</strong> Python / Django を用いたWebアプリケーション開発</li>
+                <li><strong>情報工学基礎:</strong> 情報システム、ネットワーク、データ構造とアルゴリズムの基礎知識</li>
+                <li><strong>ビジネス・戦略視点:</strong> データの分析とそれを活かした論理的アプローチ、課題解決スキルの習得</li>
+            </ul>
+        </section>
+
+        <!-- Works セクション -->
+        <section id="works">
+            <h2>Works</h2>
+            <div class="card">
+                <h3>就職活動支援Webアプリケーション</h3>
+                <p>PythonとDjangoフレームワークを用いて開発を進めているWebアプリケーションです。自分自身の経験や周りの学生の課題をもとに、選考状況の効率的な管理や情報集約をサポートする機能を実装しています。実務で役立つプロダクトの設計・開発プロセスを意識しています。</p>
+            </div>
+        </section>
+
+        <!-- Reflection セクション -->
+        <section id="reflection">
+            <h2>Reflection</h2>
+            <p>第6週のソフトウェア工学の講義および演習を通じて、GitやGitHubを用いたバージョン管理、GitHub Desktopの基本操作（commit / push / pull）を体系的に学びました。</p>
+            <p>これまでは個人でのファイル管理にとどまっていましたが、意味のある単位で変更履歴を残すコミットの重要性や、クラウドを用いたスムーズなデプロイの流れを体験できたことは大きな収穫です。単にコードを書くだけでなく、LLMなどの最新ツールを賢く活用しながら、技術をビジネスやプロダクト開発にどう組み込んでいくかという視点を今後も磨いていきたいです。</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Hayato Komine. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // スムーススクロール用の簡単なJavaScript
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
